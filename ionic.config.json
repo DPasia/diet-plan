@@ -1,7 +1,0 @@
-{
-  "name": "diet-plan",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
