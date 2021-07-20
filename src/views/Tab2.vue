@@ -1,14 +1,14 @@
 <template>
-  <ion-page>
+  <ion-page >
     <ion-header>
       <ion-toolbar>
-        <ion-title>Weight Loss</ion-title>
+        <ion-title>🧘‍♀️ Weight Loss</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Loss</ion-title>
+          <ion-title size="large">🧘‍♀️ Weight Loss</ion-title>
         </ion-toolbar>
       </ion-header>
 

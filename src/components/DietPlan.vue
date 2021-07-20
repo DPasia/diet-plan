@@ -1,5 +1,5 @@
 <template>
-  <plan :dietPlan="thePlan" />
+  <plan :dietPlan="thePlan" :type="achievementType" />
 </template>
 
 <script>
@@ -33,28 +33,28 @@ export default {
     lossPlans() {
       const t = this.timeInterval;
       return {
-        [t.wakingUp]: ["1-2 glass luke warm water"],
-        [t.breakfast]: ["1 bowl of oats"],
-        [t.lunch]: ["fruit"],
-        [t.dinner]: ["one bowl of salad"],
+        [t.wakingUp]: ["🥛 1-2 glass luke warm water"],
+        [t.breakfast]: ["🍵 1 bowl of oats"],
+        [t.lunch]: ["🍌 fruit"],
+        [t.dinner]: ["🥗 one bowl of salad"],
       };
     },
     gainPlans() {
       const t = this.timeInterval;
       return {
         [t.breakfast]: [
-          "2 boiled eggs",
-          "2 slice of multi-grain bread with butter",
-          "bowl of oatmeal",
-          "orange juice",
+          "🥚 2 boiled eggs",
+          "🍞 2 slice of multi-grain bread with butter",
+          "🥣 bowl of oatmeal",
+          "🍊 orange juice",
         ],
-        [t.lunch]: ["meat", "chicken or pork", "cups of rice"],
+        [t.lunch]: ["🍖 meat", "🍗 chicken or pork", "🍚 cups of rice"],
         [t.dinner]: [
-          "fish",
-          "stir fried veggies with baked potatoes",
-          "brown rice",
+          "🍣 fish",
+          "🍛 stir fried veggies with baked potatoes",
+          "🍘 brown rice",
         ],
-        [t.bedtime]: ["milk"],
+        [t.bedtime]: ["🥛 milk"],
       };
     },
   },

@@ -1,10 +1,10 @@
 <template>
   <ion-list>
-    <ion-list-header>
+    <ion-list-header :color="color">
       <ion-label>
         <h1>{{ header }}</h1></ion-label
       >
-      <ion-button @click="toggle = !toggle"
+      <ion-button @click="toggle = !toggle" color="warning"
         >{{ toggle ? "Hide" : "Show" }} plans</ion-button
       >
     </ion-list-header>
@@ -40,11 +40,23 @@ export default {
       type: Array,
       required: true,
     },
+    type: {
+      type: String,
+      required: true,
+    }
   },
   data() {
     return {
       toggle: false,
     };
+  },
+  computed: {
+    color() {
+      if (this.type === "gain") {
+        return "primary";
+      }
+      return "danger"
+    }
   },
   components: { IonItem, IonLabel, IonList, IonListHeader, IonCheckbox },
 };

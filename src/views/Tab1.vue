@@ -2,13 +2,14 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Weight Gain</ion-title>
+        <ion-title>💪 Weight Gain</ion-title>
       </ion-toolbar>
     </ion-header>
+    
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Gain</ion-title>
+          <ion-title size="large">💪 Weight Gain</ion-title>
         </ion-toolbar>
       </ion-header>
 
